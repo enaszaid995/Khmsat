@@ -1,0 +1,595 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color:#444444 ;
+    position: fixed;
+    height: 60PX;
+    width: 100%;
+
+}
+ nav{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav1{
+    position: absolute;
+    color: white;
+         
+}
+
+ul{
+    display: inline;
+    margin-left: 100px;
+}
+.nav1 button{
+
+   
+    background-color:#444444 ;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    margin: 1px 5px ;
+    border: 1px solid rgb(202, 200, 200);  
+}
+.rightlist{
+    margin-left: 350px;
+    border: none;
+}
+    
+
+.nav1 button:hover{
+    opacity: 0.6;
+    
+}
+
+.nav1 li{
+    display: inline;
+    padding-left: 10px;
+}
+.nav1 .btn{
+    border: none; 
+    padding: 15px 15px;   
+    margin-bottom: 15px;
+}
+.nav1 .btn:hover{
+
+    background-color: rgb(158, 157, 154);
+    
+}
+.khmsat{
+    visibility: hidden;;
+}
+
+@media screen and (max-width:1300px)  {
+ .rightlist{
+    margin-left: 0px;
+ }
+
+    
+}
+
+@media screen and (max-width:950px)  {
+    .livisible{
+        visibility: hidden;
+    }
+    .khmsat{
+        visibility: visible;
+    }
+
+    nav{
+        padding-left: 0px;
+    }
+
+    .nav1{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .rightlist{
+        margin-left: 0px;
+    }
+    ul{
+        margin-left: 0px;
+    }
+    .secondSection{
+        background-position: center 50%;
+    }
+   }
+
+.secondSection{
+    width: 100%;
+    min-height: 470px;
+    text-align: center;
+    background-image:url('images/back.jpg');
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+    font-family: cursive, sans-serif;
+    direction: rtl;
+    color: black;
+}
+h1{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+    padding-top: 150px;
+    border: 0;
+    color: #222222;
+    
+}
+h3{
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+    border: 0;
+    color: #222222;
+    
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .thirdSection{
+    width: 100%;
+    min-height: 470px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    direction: rtl;
+    color: black;
+}
+.services{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-right: 50px;
+    
+}
+.services div{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin-left: 10px;
+    
+}
+
+.services img{
+    position: absolute;
+    opacity: 0.8;
+    background-color: black;
+}
+
+
+.services span{
+    position: absolute;
+    /* top: 50px;
+    right: 230px; */
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+    font-size: 25px;
+    background-color:rgb(0,0,0,0.6);
+    width: 200px;
+    height: 100px;
+    text-align: unset;
+    padding-top: 50px;
+    
+}
+
+.search{
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: #444444;
+    background-image: url('images/search\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    text-align: center;
+    font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+}
+
+.search>h2 {
+        font-size: 24px;
+        color: #ffffff;
+        padding-top: 100px;
+        font-weight: normal;
+        font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+        border: 0;
+    }
+
+.searchbox{
+    width: 100%;
+    max-width: 687px;
+    height: 67px;
+    margin: 40px auto 0;
+    background: #ffffff;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+   
+    }
+
+.searchbox span {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: #444444;
+        padding: 0 15px 0 0;
+        width: 45px;
+        min-width: 45px;
+        
+}
+form{
+    display: block;
+   
+}
+input {
+    font-size: 23px;
+    font-family: "Noto Naskh Arabic", "Open Sans", serif;
+    height: 52px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 15px;
+    display: inline-block;
+    width: 520px;
+    color: #444;
+    
+    padding: 2px 4px;
+    background: #fff;
+}
+
+.searchbox button{
+   
+        height: 52px;
+        background: #52B035;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0 15px;
+        width: 84px;
+        min-width: 84px;
+        float: left;
+    }
+
+
+.khmsatwork{
+    text-align: center;
+    width: 80%;
+    padding: 40px 0 40px 0;
+    margin: auto;
+}
+.workstep{
+    position: relative;
+    min-height: 373px;
+    display: flex;
+    align-items: center;
+}
+.workcontainer{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    direction: rtl;
+}
+h2{
+    font-size: 24px;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+    border: 0;
+    text-align: center;
+}
+
+.step{
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -26px;
+}
+
+.stepdescription {
+    min-height: 103px;
+    width: 360px;
+    background: #52B035;
+    padding: 9px 12px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stepdescriptioncontent>p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    margin-right: 4px;
+    line-height: 27px;
+    font-family: "Noto Naskh Arabic", "Open Sans", serif;
+}
+
+.step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border: 8px solid #52B035;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background: white;
+    font-size: 24px;
+    position: relative;
+}
+
+.des1>span {
+    margin-right: 30px;
+}
+
+.des2>div {
+    position: absolute;
+    top: 95px;}
+.des2{
+        width: 180px;
+    }
+
+.des2>span:after {
+        top: unset !important;
+        bottom: -56px;
+    }
+.step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border: 8px solid #52B035;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background: white;
+    font-size: 24px;
+    position: relative;
+}
+.step span:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    background: #52B035;
+    z-index: -3;
+    top: -56px;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 99%;
+    height: 10px;
+    background: #52B035;
+}
+.arrow:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 33px;
+        background: #52B035;
+        width: 10px;
+    }
+.arrow:after {
+        content: "";
+        position: absolute;
+        left: -11px;
+        width: 0;
+        height: 0;
+        border-top: 18px solid transparent;
+        border-right: 33px solid #52B035;
+        border-bottom: 18px solid transparent;
+    }
+@media screen and (max-width: 992px){
+        .arrow:before {
+            bottom: unset !important;
+            height: 10px;
+            width: 33px;
+            right: unset;
+            top: 0;
+        }
+    }
+
+@media (max-width: 992px){
+        .arrow:after {
+            bottom: -31px;
+            left: unset;
+            width: 0;
+            height: 0;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-top: 33px solid #52B035;
+        }
+    }
+.menu{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    font-family: "Noto Naskh Arabic", "Open Sans", serif;
+}    
+.title{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+   
+}
+.iconitem{
+    width: 20px;
+    position: relative;
+}
+.iconitem::before,.iconitem::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: -1.5px;
+    left: 100px;
+    bottom: 200px;
+    background: rgb(12, 12, 12);
+    transform: rotate(60deg);
+    font-weight: bolder;
+}
+.iconitem::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: -1.5px;
+    left: 110px;
+    bottom: 200px;
+    background: rgb(5, 5, 5);
+    transform: rotate(120deg);
+   
+}
+.ytext{
+    
+    margin: 3px 0px;
+    height: 0%;
+    opacity: 0;
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+   
+}
+.item:target .ytext{
+    line-height: 35px;
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top: 1px solid rgb(100, 99, 99);
+    margin-bottom: 6px;
+}
+
+.item:target .iconitem::after{
+   left:89px;
+}
+.blog{
+    background-color: #F1F1F1;
+    padding-top: 50px;
+}
+.blogger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    box-sizing: border-box;
+    direction: rtl;
+    padding: 0 18px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+    padding-bottom: 50px;
+   
+}
+
+.blogbox {
+    background: white;
+    min-height: 350px;
+    padding: 15px;
+    padding-bottom: 50px;
+    max-width: 280px;
+    margin:5px;
+
+}
+.register{
+        width: 100%;
+        padding-bottom: 60px;
+        background-image:url('images/regback.png');
+        background-size: contain;
+        background-position: center 87%;
+        background-repeat: repeat-x;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+   
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    direction: rtl;
+    padding: 10px 18px;
+    font-family: 'Courier New', Courier, monospace, "Open Sans", sans-serif;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+   
+}
+.about h3{
+    font-weight: normal;
+    padding: 20px  0px;
+}
+.about a{
+    color: #000;
+    text-decoration: none;
+    list-style-type:square;
+}
+.about li{
+    margin-right: 15px;
+}
+footer{
+    display: flex;
+    background: #F1F1F1;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+footer li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+}
+footer li :hover{
+    color: #4CAF50;
+}
+.copy{
+    padding-left: 150px;
+}
+.footlist{
+    padding-right: 150px;
+}
